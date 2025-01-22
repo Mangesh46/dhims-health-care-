@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .locator-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo h1 {
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .directions {
+    margin-top: 20px;
+  }
+  
+  .directions input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .directions div {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  

@@ -1,0 +1,313 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #ffffff; /* White background */
+  color: #333; /* Default text color */
+  min-height: 100vh; /* Ensure body fills screen height */
+  display: flex;
+  flex-direction: column; /* Ensure footer stays at the bottom */
+
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #2195f37f; /* Blue background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #6317df; /* Pink background when scrolled */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White logo */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* White color for links */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff80ab; /* Soft pink hover effect */
+  transform: scale(1.1);
+}
+
+.btn-appointment {
+  background-color: #ff4081; /* Bright pink button */
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: buttonHover 0.4s ease alternate infinite;
+  margin-right: 50px; /* Moves button 10px to the left */
+}
+
+
+.btn-appointment:hover {
+  background-color: #f50057; /* Darker pink on hover */
+  transform: translateY(-5px);
+}
+
+@keyframes buttonHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  /* background-image: url("./bgphoto.png"); */
+  background-size: cover;
+  background-position: center;
+  width: 105.7%;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter dark overlay */
+}
+
+.hero-content {
+  z-index: 10;
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ffffff; /* Bright white for the main title */
+  margin-top: 450px; /* Adjust this value to move it down */
+  margin-left: -160px; /* Adjust this value to move it to the left */
+}
+
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #ec407a; /* Bright pink for the subtitle */
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: -30px;
+  margin-right: auto;
+  color: #efeeee; /* Lighter white for text */
+}
+
+.hero-btn {
+  background-color: #2195f37f; /* Bright blue button */
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: black;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btn:hover {
+  background-color: #0288d1; /* Darker blue on hover */
+  transform: translateY(-5px);
+}
+
+/* Custom Component Buttons: Hospital Locator, Appointment, etc. */
+
+/* Hospital Locator Button */
+.btn-hospital-locator {
+  background-color: #7b1fa2; /* Purple for the hospital locator */
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hospital-locator:hover {
+  background-color: #9c4dcc; /* Lighter purple when hovered */
+  transform: translateY(-5px);
+}
+
+/* Appointment Button */
+.btn-appointment {
+  background-color: #ff4081; /* Bright pink */
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-appointment:hover {
+  background-color: #f50057; /* Darker pink on hover */
+  transform: translateY(-5px);
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.main-content .content-left,
+.main-content .content-right {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #2195f376; /* Blue background for footer */
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0; /* Ensures footer stays at the bottom */
+  width: 1450px;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  margin-left: 1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff80ab; /* Soft pink hover effect for social links */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero-section {
+    min-height: 60vh;
+    padding: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* Logo Image Styles */
+.logo-image {
+  max-width: 150px;  /* Set max-width for the logo */
+  height: auto;     /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image is not distorted */
+}
+
+/* Logo Styles */
+.logo-image {
+  max-height: 50px;  /* Adjust this value to reduce the height */
+  width: auto; /* Keep the aspect ratio */
+}

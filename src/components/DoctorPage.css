@@ -1,0 +1,91 @@
+.prescription-management-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.prescription-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-form h2 {
+  margin-bottom: 20px;
+}
+
+.prescription-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.prescription-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prescription-form button:hover {
+  background-color: #0056b3;
+}
+
+.prescription-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.prescription-list th,
+.prescription-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.prescription-list th {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}

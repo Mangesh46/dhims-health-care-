@@ -1,0 +1,68 @@
+.appointment-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo h1 {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.appointment-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.appointment-description {
+  margin-bottom: 10px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.calendar-section {
+  margin-top: 20px;
+}
+
+.availability-section {
+  margin-top: 10px;
+  font-weight: bold;  
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.book-appointment-button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-appointment-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.book-appointment-button:hover {
+  background-color: #218838;
+}
